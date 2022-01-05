@@ -1,0 +1,150 @@
+.hidden{
+    display:none;
+}
+
+header{
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+.navbar-brand{
+    font-size: 36pt;
+}
+
+.navbar{
+    background-color: #b5c2c7;
+    padding-left: 2em;
+    
+}
+
+body{
+    background-color: #f6fafc;
+}
+
+.solved{
+    color: darkblue;
+}
+
+#solve-btn, #reset{
+    margin: 1em 1em 0 1em;
+    padding: 0.8em 2em;
+    border-radius: 5%;
+}
+
+#diff, #time, #mode {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+#diffSelect, #timeChoice, #methodSelect {
+    border-style: none;
+    padding: 1em 0 1em 1em;
+    font-size: 12pt;
+    background-color: #f6fafc;
+}
+
+#diffSelect.dark, #timeChoice.dark{
+    background-color: #444;
+    color:white;
+}
+
+
+#setup-game{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#setup-game > *{
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#timer, #lives{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#game{
+    display: flex;
+    justify-content: center;
+}
+
+#number-container > p{
+    border: 1px solid black;
+    border-radius: 20%;
+    width: 60px;
+    height: 60px;
+    font-size: 30pt;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#board{
+    padding-top: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 600px;
+    height: 600px;
+}
+
+.tile{
+    border: 1px solid black;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 34pt;
+    
+}
+
+p.selected {
+    background-color: lightblue;
+}
+
+p.incorrect{
+    color: red;
+}
+
+.rightBorder{
+    border-right: 4px solid black;
+}
+
+.bottomBorder{
+    border-bottom: 4px solid black;
+}
+
+footer{
+    background-color: lightgray;
+    text-align: center;
+}
+
+.dark{
+    background-color: #444;
+    color:white;
+}
+
+.navbarDark{
+    background-color: #333;
+}
+
+@media (max-width: 700px){
+    .tile{
+        display: none;
+    }
+
+    #number-container > p{
+        display: none;
+    }
+}
